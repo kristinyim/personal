@@ -94,8 +94,33 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.panorama {
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image:url("/img/panorama-mt-rainier.jpg");
+    animation: slideleft 60000s infinite linear;
+    -webkit-animation: slideleft 60000s infinite linear;
+}
+@keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
 
+    to {
+        background-position: 90000%;
+    }
+}
 
+@-webkit-keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 90000%;
+    }
+}
 
 
 
